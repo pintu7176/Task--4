@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f8ff;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #0077cc;
+  }
+  
+  .task-form input, .task-form button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .task-form button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .task-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-top: 8px;
+  }
+  
+  .task.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .task-text {
+    max-width: 60%;
+  }
+  
+  .task-actions button {
+    margin-left: 5px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .task-actions button:nth-child(1) { background-color: #28a745; }  /* Done/Undo */
+  .task-actions button:nth-child(2) { background-color: #ffc107; color: #333; }  /* Edit */
+  .task-actions button:nth-child(3) { background-color: #5135dc; }  /* Delete */
+  
+  .task-actions button:hover {
+    opacity: 0.9;
+  }
+  
+  .task-date {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  .list-section {
+    margin-top: 20px;
+  }
+  
+  h3 {
+    color: #333;
+    border-left: 4px solid #0077cc;
+    padding-left: 10px;
+  }
+  
